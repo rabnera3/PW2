@@ -10,22 +10,24 @@ body {
 header {
     background-color: #3e2723;
     color: #fff;
-    padding: 1rem 0;
+    padding: 1rem;
+    text-align: center;
 }
 
 .header-content {
     max-width: 800px;
     margin: 0 auto;
-    text-align: center;
+    padding: 0 1rem; /* Añade padding lateral para dar más espacio */
 }
 
 .header-content h1 {
-    margin-bottom: 0.5rem;
+    margin: 0 0 0.5rem;
+    font-size: 1.5rem; /* Reduce el tamaño de la fuente para pantallas pequeñas */
 }
 
 .header-content p {
     margin: 0;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .products {
@@ -35,28 +37,50 @@ header {
     padding: 1rem;
 }
 
+.products h2 {
+    width: 100%;
+    text-align: left;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    color: #3e2723;
+    border-bottom: 2px solid #3e2723;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
 .product {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
     margin: 0.25rem;
     padding: 1rem;
-    width: 300px; /* Fija el ancho de la tarjeta */
+    width: 100%;
+    max-width: 300px;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    min-height: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.product:hover {
+    transform: scale(1.05);
 }
 
 .product img {
-    width: 300px; /* Fija el ancho de la imagen */
-    height: 200px; /* Fija la altura de la imagen */
+    width: 100%;
+    height: auto;
+    max-height: 200px;
     object-fit: cover;
     border-radius: 8px;
 }
 
-.product h2 {
+.product h3 {
     margin: 1rem 0 0.5rem;
+    color: #3e2723;
+    font-size: 1.2rem;
 }
 
 .product p {
@@ -69,20 +93,55 @@ header {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        margin: 2rem auto;
+        max-width: 1200px;
     }
 
     .product {
-        margin: 0.5rem;
-        width: 300px; /* Fija el ancho de la tarjeta */
+        margin: 1rem;
+        width: calc(33.333% - 2rem);
+    }
+
+    header {
+        padding: 2rem;
+    }
+
+    .header-content h1 {
+        font-size: 2.4rem;
+    }
+
+    .header-content p {
+        font-size: 1.2rem;
+    }
+
+    .products h2 {
+        font-size: 2rem;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 2rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 3px solid #3e2723;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    footer {
+        padding: 2rem;
+    }
+
+    footer p {
+        font-size: 1.2rem;
     }
 }
 
 footer {
     background-color: #3e2723;
     color: #fff;
-    padding: 1rem 0;
+    padding: 1rem;
+    text-align: center;
 }
 
 footer p {
     margin: 0;
+    font-size: 1rem;
 }

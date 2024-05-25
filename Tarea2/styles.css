@@ -1,0 +1,83 @@
+/* Estilos Mobile First */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #a0522d; /* Color café claro */
+}
+
+footer {
+    background-color: #a0522d; /* Color café claro */
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.card {
+    border: none;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.fixed-size-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1rem; /* Tamaño más pequeño para el título */
+    color: #343a40;
+}
+
+.card-text {
+    font-size: 0.875rem; /* Tamaño más pequeño para el texto */
+    color: #6c757d;
+}
+
+/* Estilos para pantallas medianas y grandes */
+@media (min-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.25rem;
+    }
+
+    .card-title {
+        font-size: 1.25rem; /* Tamaño más pequeño para el título */
+    }
+
+    .card-text {
+        font-size: 1rem; /* Tamaño más pequeño para el texto */
+    }
+}
+
+@media (min-width: 992px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    .card-title {
+        font-size: 1.5rem; /* Tamaño más pequeño para el título */
+    }
+
+    .card-text {
+        font-size: 1.125rem; /* Tamaño más pequeño para el texto */
+    }
+}

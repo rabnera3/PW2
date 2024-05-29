@@ -10,7 +10,7 @@ body {
 header {
     background-color: #3e2723;
     color: #fff;
-    padding: 1rem;
+    padding: 1rem 0;
     text-align: center;
     position: relative;
 }
@@ -21,11 +21,26 @@ header {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.nav-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .nav-logo h1 {
     margin: 0;
     font-size: 1.5rem;
+    white-space: nowrap;
+}
+
+.nav-logo p {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #ffe0b2;
 }
 
 .nav-links {
@@ -37,6 +52,7 @@ header {
     color: #fff;
     text-decoration: none;
     font-weight: 700;
+    font-size: 1rem;
 }
 
 .burger {
@@ -50,18 +66,6 @@ header {
     width: 25px;
     height: 3px;
     background-color: #fff;
-}
-
-.header-content {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 1rem;
-}
-
-.header-content p {
-    margin: 0;
-    font-size: 1rem;
-    font-weight: 400;
 }
 
 .products {
@@ -132,7 +136,7 @@ header {
         width: 100%;
         background-color: #3e2723;
         position: absolute;
-        top: 70px;
+        top: 60px;
         left: 0;
     }
 
@@ -152,6 +156,19 @@ header {
     .nav-links.active {
         display: flex;
     }
+
+    .nav-logo {
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav-logo h1 {
+        font-size: 1.2rem;
+    }
+
+    .nav-logo p {
+        font-size: 0.8rem;
+    }
 }
 
 @media (min-width: 768px) {
@@ -169,15 +186,15 @@ header {
     }
 
     header {
-        padding: 2rem;
+        padding: 1rem 2rem;
     }
 
-    .header-content h1 {
-        font-size: 2.4rem;
+    .nav-logo h1 {
+        font-size: 2rem;
     }
 
-    .header-content p {
-        font-size: 1.2rem;
+    .nav-logo p {
+        font-size: 1rem;
     }
 
     .products h2 {

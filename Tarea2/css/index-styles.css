@@ -69,15 +69,57 @@ header {
 }
 
 .main-image {
-    width: 100%;
+    width: 80%;
     height: auto;
     margin: 1rem 0;
 }
 
-.product-grid {
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-track-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
 }
 
 .product {
@@ -86,12 +128,12 @@ header {
     border-radius: 8px;
     margin: 1rem;
     padding: 1rem;
-    width: calc(50% - 2rem);
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 300px;
+    height: 300px;
+    width: 250px; /* Ajusta el tamaño de las tarjetas */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
 }
@@ -102,8 +144,7 @@ header {
 
 .product img {
     width: 100%;
-    height: auto;
-    max-height: 200px;
+    height: 150px;
     object-fit: cover;
     border-radius: 8px;
 }
@@ -165,11 +206,30 @@ header {
     .product {
         width: calc(100% - 2rem);
     }
+
+    .carousel-track {
+        justify-content: center;
+    }
 }
 
 @media (min-width: 768px) {
-    .product {
-        width: calc(25% - 2rem);
+    .carousel-track-container {
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carousel-track {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .carousel-slide {
+        min-width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     header {
@@ -182,6 +242,10 @@ header {
 
     .nav-logo p {
         font-size: 1rem;
+    }
+
+    .nav-links {
+        gap: 2rem;
     }
 }
 

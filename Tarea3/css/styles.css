@@ -1,0 +1,153 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    flex: 1 0 auto;
+    padding: 2rem 0;
+}
+
+header, footer {
+    background-color: #004d40;
+}
+
+h2.teal-text.text-darken-2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+}
+
+.section-profile,
+.section-projects,
+.section-contact {
+    padding: 3rem 0;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.section-profile {
+    background-color: #ffffff;
+}
+
+.section-projects {
+    background-color: #f9f9f9;
+}
+
+.section-contact {
+    background-color: #ffffff;
+}
+
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.card {
+    margin-bottom: 2rem;
+}
+
+.card .card-image img.project-image {
+    height: 200px;
+    object-fit: cover; 
+}
+
+.card .card-title {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 0.5rem;
+    border-radius: 0 0 4px 4px;
+}
+
+.card-reveal {
+    display: none;
+}
+
+.card.revealed .card-reveal {
+    display: block;
+}
+
+.btn {
+    margin-top: 1rem;
+}
+
+.page-footer {
+    padding-top: 0;
+}
+
+.page-footer .container {
+    padding-top: 1rem;
+}
+
+.page-footer .row {
+    margin-bottom: 0;
+}
+
+.scrollspy {
+    padding-top: 4rem;
+}
+
+.flow-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.divider {
+    height: 2px;
+    background-color: #e0e0e0;
+    margin: 3rem 0;
+}
+
+@media screen and (max-width: 600px) {
+    .nav-wrapper .brand-logo {
+        font-size: 1.5rem;
+    }
+
+    .responsive-img {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .card .card-image img.project-image {
+        height: auto;
+    }
+
+    .card {
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .col.s12.m6.l4 {
+        width: 100%; 
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .card {
+        height: auto; 
+    }
+
+    .card .card-content, .card .card-action {
+        padding: 1rem;
+    }
+
+    .card .card-title {
+        font-size: 1.5rem;
+    }
+
+    .card .card-image img.project-image {
+        height: 250px; 
+    }
+
+    .col.s12.m6.l4 {
+        width: 50%;
+    }
+}

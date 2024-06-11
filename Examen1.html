@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC en Logística y Manejo Aduanero</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        .parallax-container {
+            height: 300px;
+        }
+
+        .section {
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+        }
+
+        .brand-logo {
+            margin-left: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo">LogísTIC</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i
+                        class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#acerca">Acerca de Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#acerca">Acerca de Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </header>
+    <div class="parallax-container">
+        <div class="parallax"><img src="https://via.placeholder.com/1920x300" alt="Imagen de fondo"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 center">
+                    <h1 class="white-text">Eficiencia y Transparencia en Procesos Aduaneros</h1>
+                    <p class="white-text">Mejoramos la logística y el manejo aduanero con soluciones innovadoras.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section white" id="servicios">
+        <div class="container">
+            <div class="row">
+                <h2 class="center">Nuestros Servicios</h2>
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://via.placeholder.com/300x200" alt="Imagen del servicio 1">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Despacho Aduanero</span>
+                            <p>Tramitamos y gestionamos los procesos de importación y exportación para garantizar un
+                                despacho aduanero eficiente y sin contratiempos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://via.placeholder.com/300x200" alt="Imagen del servicio 2">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Consultoría en Logística</span>
+                            <p>Ofrecemos asesoramiento especializado en estrategias logísticas para optimizar la cadena
+                                de suministro y reducir costos operativos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://via.placeholder.com/300x200" alt="Imagen del servicio 3">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Seguimiento de Cargas</span>
+                            <p>Utilizamos tecnología de última generación para rastrear y monitorear en tiempo real el
+                                movimiento de mercancías durante todo el proceso logístico.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section grey lighten-4" id="acerca">
+        <div class="container">
+            <div class="row">
+                <h2 class="center">Acerca de Nosotros</h2>
+                <p class="center">Somos una empresa dedicada a mejorar la logística y el manejo aduanero a través de
+                    tecnologías innovadoras y eficientes. Nuestro compromiso es ofrecer transparencia y agilidad en
+                    todos los procesos comerciales para reducir costos y optimizar operaciones.</p>
+            </div>
+        </div>
+    </div>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Logística TIC</h5>
+                    <p class="grey-text text-lighten-4">Mejorando la logística y el manejo aduanero.</p>
+                </div>
+                <div class="col l4 offset-l2 s12" id="contacto">
+                    <h5 class="white-text">Contacto</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="tel:+123456789">Teléfono: +123456789</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Twitter</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elemsParallax = document.querySelectorAll('.parallax');
+            var instancesParallax = M.Parallax.init(elemsParallax);
+            var elemsSidenav = document.querySelectorAll('.sidenav');
+            var instancesSidenav = M.Sidenav.init(elemsSidenav);
+        });
+    </script>
+</body>
+
+</html>
